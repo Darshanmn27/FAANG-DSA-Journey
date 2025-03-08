@@ -296,10 +296,15 @@ public class HexadecimalToDecimal {
 }
 ```
 
+
+
+
+
+
+
 ### ✅ Method 2: Manual Conversion (Logic)
 
-```
-java
+```java
 public class HexadecimalToDecimalManual {
     public static void main(String[] args) {
         String hex = "F";
