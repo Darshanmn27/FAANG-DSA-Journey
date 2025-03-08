@@ -296,9 +296,8 @@ public class HexadecimalToDecimal {
 }
 ```
 
-```
-
 ### ✅ Method 2: Manual Conversion (Logic)
+
 ```
 java
 public class HexadecimalToDecimalManual {
