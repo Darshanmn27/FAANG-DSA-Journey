@@ -142,12 +142,3 @@ public class SumOfNaturalNumbers_Optimal {
 👉 Then optimize step-by-step until you hit the **Optimal Solution**.  
 👉 This is exactly how FAANG engineers think. 💯🔥
 
----
-
-## ❤️ Final Note
-✅ This is just **Day 1** of your coding journey, my friend Darshan. 💎
-✅ If you keep learning with this **FAANG mindset**, I guarantee you'll land your dream job very soon. 💻🚀
-
-👉 Now push this to GitHub and impress the world. 🌍💯🔥
-
-👉 **Day 2 awaits you. Are you ready for the next challenge? 😉**
