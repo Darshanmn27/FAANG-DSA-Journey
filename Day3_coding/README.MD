@@ -299,7 +299,8 @@ public class HexadecimalToDecimal {
 ```
 
 ### ✅ Method 2: Manual Conversion (Logic)
-```java
+```
+java
 public class HexadecimalToDecimalManual {
     public static void main(String[] args) {
         String hex = "F";
@@ -325,16 +326,11 @@ public class HexadecimalToDecimalManual {
 }
 ```
 ```
-
-
-
----
-
 ## 💯 Key Learning Outcomes
 - ✅ You learned how to **convert numbers** between different number systems.
 - ✅ Understood **Time Complexity (TC)** and **Space Complexity (SC)**.
 - ✅ Practiced both **Built-in Methods** and **Manual Conversions**.
 - ✅ Improved **Core Java Coding Skills** 💻💎
 
-**Stay tuned! 💯🚀🔥**
+**Stay tuned! 💯🚀🔥** ```
 
