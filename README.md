@@ -74,7 +74,7 @@ Here are the platforms where I am solving my daily coding problems:
 | 💻 LeetCode    | [My LeetCode Profile](https://leetcode.com/u/darshanmn2327/) |
 | 💡 Strivers A2Z DSA Course | [Strivers](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/) 
 | linked in |[linedin](https://www.linkedin.com/in/darshan-m-n-7546b632b/)
-| Geeks For Geeks [GFG](https://www.geeksforgeeks.org/user/darshan9tkx/?ref=header_profile)
+| Geeks For Geeks | [GFG](https://www.geeksforgeeks.org/user/darshan9tkx/?ref=header_profile)
 
 👉 If you're interested in my daily coding journey, feel free to connect with me. 🚀💯  
 
