@@ -1,4 +1,4 @@
-# 🚀 Day 9: Check if a Number is a Perfect Square or Not
+# 🚀 Day 10: Check if a Number is a Perfect Square or Not
 
 ## 📜 Problem Statement
 
