@@ -1,4 +1,4 @@
-# 🚀 Day 1: Prime Number Check in Java
+# 🚀 Day 5: Prime Number Check in Java
 
 ## 📜 Problem Statement
 Given an integer **N**, write a program to check whether the number is **Prime or Not**.
