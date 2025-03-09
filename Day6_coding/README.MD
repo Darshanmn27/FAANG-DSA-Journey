@@ -1,4 +1,4 @@
-# 🚀 Day 4 - Armstrong Number Problem
+# 🚀 Day 6 - Armstrong Number Problem
 
 ## 📌 Problem Statement
 Write a **Java program** to check if a given number is an **Armstrong Number** or not using different approaches.
