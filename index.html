@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Born Day Anvitha</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 3em;
+      color: #fff;
+      text-shadow: 0 0 10px #fff, 0 0 20px #ff69b4, 0 0 30px #ff1493;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+    }
+
+    canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎉 Happy Born Day Anvitha 🎉</h1>
+
+  <canvas id="confetti"></canvas>
+
+  <script>
+    // Confetti Animation
+    const canvas = document.getElementById('confetti');
+    const ctx = canvas.getContext('2d');
+    let pieces = [];
+    let numberOfPieces = 100;
+
+    function resizeCanvas() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+
+    function randomColor() {
+      const colors = ['#FF0A54', '#FF477E', '#FF7096', '#FF85A1', '#FFA3B5'];
+      return colors[Math.floor(Math.random() * colors.length)];
+    }
+
+    function createPiece() {
+      return {
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height - canvas.height,
+        size: Math.random() * 10 + 5,
+        speed: Math.random() * 3 + 1,
+        color: randomColor(),
+        tilt: Math.random() * 10 - 5
+      };
+    }
+
+    function initPieces() {
+      pieces = [];
+      for (let i = 0; i < numberOfPieces; i++) {
+        pieces.push(createPiece());
+      }
+    }
+
+    function updatePieces() {
+      for (let piece of pieces) {
+        piece.y += piece.speed;
+        piece.tilt += 0.5;
+
+        if (piece.y > canvas.height) {
+          Object.assign(piece, createPiece());
+          piece.y = 0;
+        }
+      }
+    }
+
+    function drawPieces() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      for (let piece of pieces) {
+        ctx.beginPath();
+        ctx.arc(piece.x + piece.tilt, piece.y, piece.size, 0, Math.PI * 2);
+        ctx.fillStyle = piece.color;
+        ctx.fill();
+      }
+    }
+
+    function loop() {
+      updatePieces();
+      drawPieces();
+      requestAnimationFrame(loop);
+    }
+
+    window.addEventListener('resize', resizeCanvas);
+    resizeCanvas();
+    initPieces();
+    loop();
+  </script>
+</body>
+</html>
